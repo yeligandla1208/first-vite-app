@@ -18,10 +18,10 @@
 
 /** ternary operator */
 
-const UserGreeting=(props)=>{
-    return(props.isLoggedIn? <h2>Welcome {props.username}:<h2>please log in to continue</h2></h2>);
-}
-export default UserGreeting
+// const UserGreeting=(props)=>{
+//     return(props.isLoggedIn? <h2>Welcome {props.username}:<h2>please log in to continue</h2></h2>);
+// }
+// export default UserGreeting
 
 
 
