@@ -1,4 +1,6 @@
 import DemoCarousel from "./Tasks/carousal"
+import MyToasts from "../toasts/tostify"
+
 
 
 const BootstrapExam = () =>{
@@ -12,7 +14,9 @@ const BootstrapExam = () =>{
     <div className="row">
       <div className="col-sm-4">
       <div className="App">
-            <h3>React Carousel with `react-responsive-carousel`</h3>
+      {/* toasts */}
+      <MyToasts/>
+            <h3>React Carousel with `react-responsive-carousel`</h3>            
             <DemoCarousel />
         </div>
         <h3>Column 1</h3>
@@ -21,10 +25,10 @@ const BootstrapExam = () =>{
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
         </p>
       </div>
-      <div className="col-sm-4">
-      
-      
+      <div className="col-sm-4">      
         <div className="App">
+          {/* toasts */}
+      <MyToasts/>
             <h3>React Carousel with `react-responsive-carousel`</h3>
             <DemoCarousel />
         </div>
@@ -36,12 +40,12 @@ const BootstrapExam = () =>{
         </p>
       </div>
       <div className="col-sm-4">
-      
       <div className="App">
+        {/* toasts */}
+      <MyToasts/>
             <h3>React Carousel with `react-responsive-carousel`</h3>
             <DemoCarousel />
         </div>
-       
         <h3>Column 3</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>
