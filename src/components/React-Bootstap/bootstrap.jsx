@@ -3,6 +3,7 @@ import MyToasts from "../toasts/tostify"
 
 
 
+
 const BootstrapExam = () =>{
   return(
     <>
@@ -28,7 +29,7 @@ const BootstrapExam = () =>{
       <div className="col-sm-4">      
         <div className="App">
           {/* toasts */}
-      <MyToasts/>
+            <MyToasts/>
             <h3>React Carousel with `react-responsive-carousel`</h3>
             <DemoCarousel />
         </div>
