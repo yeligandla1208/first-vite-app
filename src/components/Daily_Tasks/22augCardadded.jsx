@@ -49,6 +49,8 @@ class CardAdded extends Component {
     return (
       <>
       <Button variant="primary" onClick={this.clickHandler}>Add Cart</Button>
+      {/* <Button variant="primary" onClick={this.removeHandler}>remove</Button> */}
+
 
       <div className="container mt-5">
       <div className="row">
@@ -77,3 +79,5 @@ class CardAdded extends Component {
   }
 }
 export default CardAdded;
+
+

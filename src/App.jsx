@@ -1,6 +1,7 @@
 
 // import { Button } from 'bootstrap'
 import './App.css'
+import Weather from './components/Daily_Tasks/weatherApp/weatherapp.jsx'
 import CardAdded from './components/Daily_Tasks/22augCardadded.jsx'
 // import { DemoCarousel } from './components/React-Bootstap/Tasks/corousal'
 // import  UserGreeting  from './condtional/condtionalRen.jsx'
@@ -22,7 +23,8 @@ function App(){
 
   return (
     <>
-    <CardAdded/>
+    <Weather/>
+    {/* <CardAdded/> */}
      {/* <YoutubeButton/> */}
      {/* <RotatingLoader/> */}
      {/* <RecipeList/> */}
