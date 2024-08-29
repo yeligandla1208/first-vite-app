@@ -24,17 +24,19 @@ const CustumTodo=()=>{
         setTodos(filteredItems)
     }
     
-    const updateHandler=()=>{
-        const upDatedLength = todos.length 
-        const object={
-            id : upDatedLength + 1,
-            text : `Updated ${upDatedLength+1}`
-        }
-        setTodos([...todos,object ])
-        
-        // const upDateItend = todos.filter(eachTodo=>eachTodo.id == id)
+    const [editText, seteditText] = useState("")
 
-        // setTodos(upDateItend)
+    const handleTextChange=(e)=>{
+        seteditText(e.target.value)
+    }
+    const upDateHandler=(id)=>{
+        setTodos((prevTodo) =>{
+            prevTodo.map((todo)=>
+            todo.id === id ? {...todo, text:editText} : todo
+        )
+        })
+        seteditText(`upDate text`)
+
     }
 
 
@@ -55,7 +57,7 @@ const CustumTodo=()=>{
                     </li>
 
                     <button onClick={()=>deleteHandler(id)}>Delete Item</button>
-                    <button onClick={()=>updateHandler(id)}>Update</button>
+                    <button onClick={()=>upDateHandler(todos.id)}>Update</button>
 
                     {/* </React.Fragment>     */}
                     </div>           

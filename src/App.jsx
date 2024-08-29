@@ -1,6 +1,7 @@
 
 // import { Button } from 'bootstrap'
 import './App.css'
+// import { CardsData } from './components/cards/cards'
 import CustumTodo from './components/hooks/useState/todo'
 // import Counter from './components/hooks/useState/counter'
 // import Weather from './components/Daily_Tasks/weatherApp/weatherapp.jsx'
@@ -27,6 +28,7 @@ function App(){
     <>
     {/* <Counter/> */}
     <CustumTodo/>
+    {/* <CardsData text={"bharath"}/> */}
 
 
 
