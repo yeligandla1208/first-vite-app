@@ -1,8 +1,10 @@
 
 // import { Button } from 'bootstrap'
 import './App.css'
-import Weather from './components/Daily_Tasks/weatherApp/weatherapp.jsx'
-import CardAdded from './components/Daily_Tasks/22augCardadded.jsx'
+import CustumTodo from './components/hooks/useState/todo'
+// import Counter from './components/hooks/useState/counter'
+// import Weather from './components/Daily_Tasks/weatherApp/weatherapp.jsx'
+// import CardAdded from './components/Daily_Tasks/22augCardadded.jsx'
 // import { DemoCarousel } from './components/React-Bootstap/Tasks/corousal'
 // import  UserGreeting  from './condtional/condtionalRen.jsx'
 // import CustomCardsExample from './components/React-Bootstap/CardsRB.jsx'
@@ -23,16 +25,22 @@ function App(){
 
   return (
     <>
-    <Weather/>
+    {/* <Counter/> */}
+    <CustumTodo/>
+
+
+
+
+    {/* <Weather/> */}
     {/* <CardAdded/> */}
      {/* <YoutubeButton/> */}
      {/* <RotatingLoader/> */}
      {/* <RecipeList/> */}
 
-      {/* <UserGreeting isLoggedIn={false} username="Hii"/> */}
-      {/* <UserGreeting isLoggedIn={false} username="Bharath"/> */}
-      {/* <UserGreeting isLoggedIn={true} username="Bro"/> */}
-      {/* <UserGreeting isLoggedIn={true} username="Hello"/> */}
+      {/* <UserGreeting isLoggedIn={false} username="Hii"/>
+      <UserGreeting isLoggedIn={false} username="Bharath"/>
+      <UserGreeting isLoggedIn={true} username="Bro"/>
+      <UserGreeting isLoggedIn={true} username="Hello"/> */}
 
       {/* {
         CustomarData.map(each => {

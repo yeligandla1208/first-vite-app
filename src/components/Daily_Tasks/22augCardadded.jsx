@@ -48,8 +48,9 @@ class CardAdded extends Component {
   render() {
     return (
       <>
-      <Button variant="primary" onClick={this.clickHandler}>Add Cart</Button>
-      {/* <Button variant="primary" onClick={this.removeHandler}>remove</Button> */}
+      <Button variant="primary" onClick={this.clickHandler}>Cart Items</Button>
+
+      <Button variant="primary" onClick={this.removeHandler}>remove</Button>
 
 
       <div className="container mt-5">
