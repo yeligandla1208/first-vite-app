@@ -24,10 +24,10 @@ const CustumTodo=()=>{
         setTodos(filteredItems)
     }
     
-    const [editText, seteditText] = useState("")
+    const [editText, setEditText] = useState("")
 
     const handleTextChange=(e)=>{
-        seteditText(e.target.value)
+        setEditText(e.target.value)
     }
     const upDateHandler=(id)=>{
         setTodos((prevTodo) =>{
@@ -35,7 +35,7 @@ const CustumTodo=()=>{
             todo.id === id ? {...todo, text:editText} : todo
         )
         })
-        seteditText(`upDate text`)
+        setEditText("Update")
 
     }
 

@@ -1,0 +1,54 @@
+*{
+    background-color: rgb(241, 142, 241);
+    margin: auto;
+    /* padding: 0; */
+    
+    /* display: flex; */
+    
+
+}
+.main-form{
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+    margin-top: 15%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+.form-group{
+    color:rgb(255, 255, 255)
+}
+.form-control{
+    background-color: rgb(202, 38, 202);
+    border-radius: 10px;
+}
+.button{
+    border-color: rgb(227, 235, 243);
+    width: 50%;
+    border-radius: 10px;
+    color : rgb(14, 14, 14); 
+}
+label{
+    font-size: 20px;
+}
+span{
+    color: rgb(238, 10, 10);
+    font-size: 20px;
+}
+.username{
+    color: black;
+
+}
+.password{
+    color: black;
+}
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 20%;
+}
