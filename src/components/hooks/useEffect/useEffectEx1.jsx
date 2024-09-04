@@ -41,7 +41,7 @@ const UseEffectExample = () => {
 
   return(
     <>
-    <h1>useEffet Example</h1>;
+    <h1>useEffet Example</h1>
     <button onClick={ageHandler}>Age increage</button>
     {
         ["products","carts","users"].map(each=> <button key={each.index} onClick={()=>changeTypeHandler(each)}>{each}</button>)
