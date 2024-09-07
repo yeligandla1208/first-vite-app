@@ -1,7 +1,10 @@
 
-
+*{
+    margin: 0px;
+    padding: 5px;
+}
 .active{
     color:red;
     text-decoration : none;
-    margin: 10px;
+    /* margin: 20px; */
 }
