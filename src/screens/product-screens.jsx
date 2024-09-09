@@ -1,11 +1,20 @@
 
 
 import axios from "axios"
-import React, { useEffect, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import { UserDetails } from "../navigations/navigation-static"
 
 
 function ProductScreen(){
+
+    const {username} = useContext(UserDetails)
+
+   
+    console.log(username, "globeldata");
+    
+
+
     const [products, setProducts] = useState([])
 
 
@@ -26,6 +35,7 @@ function ProductScreen(){
 
     return(
         <>
+        <h3>good after noon {username}!!!</h3>
           <h1>Product Screen</h1>
 
 

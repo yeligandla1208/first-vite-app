@@ -8,6 +8,7 @@ import { JeweleryScreen } from "../screens/jewellery-screen";
 import { ElectronicsScreen } from "../screens/electronics-screens";
 import ProductScreen from "../screens/product-screens";
 import ProductDetailScreen from "../screens/product-detail-screen";
+import { createContext, useState } from "react";
 
 
 
@@ -15,11 +16,33 @@ import ProductDetailScreen from "../screens/product-detail-screen";
 
 
 
-
+export const UserDetails = createContext()
 
 
 const NavigationStatic = () => {
+
+    const [username, setUsername] = useState("dev")
+    const [isDark, setIsDark] = useState(true)
+    const [salary, setSalary] = useState(10000)
+
+    const darkHandler = ()=>{
+        setIsDark(!isDark)
+    }
+    const salaryHandler=()=>{
+        setSalary(salary+10000)
+    }
+
+
     return ( 
+
+        <UserDetails.Provider value={{
+            username:"dev",
+            darkTheme:isDark,
+            salary,
+            darkHandler,
+            salaryHandler
+        }}>
+
         <>
          <NavBar/>
           <Routes>
@@ -48,6 +71,8 @@ const NavigationStatic = () => {
             <Route path="/login" element={<HomeScreen/>}/>
          </Routes>
         </>
+
+        </UserDetails.Provider>
      
         
         
