@@ -2,6 +2,7 @@
 
 import { useContext } from "react";
 import { UserDetails } from "../navigations/navigation-static";
+import UseReducerExample from "../components/hooks/useReducer/useReducer";
 
 
 
@@ -25,6 +26,7 @@ const AboutScreen = () => {
         <>
         {/* <NavBar/> */}
         <h1>WellCome to About Screen</h1>
+        <UseReducerExample/>
         <button onClick={changeTheme} >Change Theme </button>
         <button onClick={salaryHandler}>Change salary</button>
         </>
